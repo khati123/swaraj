@@ -83,3 +83,9 @@ resource "aws_security_group" "allow_web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+output "vpc_id" {
+  value = aws_vpc.main.id
+}
+
+
